@@ -3,16 +3,23 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.5/ace.js" type="text/javascript" charset="utf-8"></script>
         <script src="ui.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css" />
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
 
     <body>
+        <div id=empty></div>
         <div id="topbar">
             <div id=client1 class=clienttab><span id=centeredtext>Client 1</span></div>
+            <div id=close>X</div>
         </div>
         <div id="editor"></div>
         <div id="bottombar">
             <div id=runbtn><span id=centeredtext>Execute</span></div>
+            <div id=languageselec>
+                <div id=languagename>JS</div>
+                <span id=iconlanguage class="mdi mdi-arrow-left-right-bold-outline"></span>
+            </div>
             <div id=linecounter>Lines : 0</div>
         </div>
     </body>
